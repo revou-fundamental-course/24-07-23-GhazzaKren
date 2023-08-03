@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Task Ghazza</title>
+    
+</head>
+<body>
+    <header class="header-wrapper">
+        <img class="logo" alt="bg-logo" src="img/tourist-coach-bus-icon_zkON5vIu_PMNW.jpg" width="40px"  />
+        <div class="menu">
+            <button>Home</button>
+            <button>Profile</button>
+            <button>Call Us</button>
+        </div>
+        </header>
+     
+            </nav>
+        </section>
+        <!-- TITLE SECTION -->
+        <section id="headerTitle">
+            <h1>Holiday in Bali with BG TRIP</h1>
+            <h3 id="subtitle">Serve you the best </h3>
+        </section>
+    </header>
+    <main>
+        <section id="callUs">
+            <div>
+                <img src="img/pantai-kuta-bali-sunset.jpg">
+                <h3>"Holidays are so much fun with BG Trip"</h3>
+                <img
+                  class="img-slideshow"
+                  src="img/pantai-kuta-bali-sunset.jpg/random/1080x400?landscape&sig=1" width="600px"
+                />
+                <img
+                  class="img-slideshow"
+                  src="img/Uluwatu.jpg/random/sig=2" width="600px"
+                />
+                <img
+                  class="img-slideshow"
+                  src="img/pura ulun danu.jpg/random/sig=3" width="600px"
+                />
+                <img
+                  class="img-slideshow"
+                  src="img/bali-safari-marine-park.jpg/random/sig=4" width="600px"
+                />
+                <img
+                  class="img-slideshow"
+                  src="img/30.-Pantai-Tanjung-Benoa.jpg/random/sig=5" width="600px"
+                />
+                <img
+                  class="img-slideshow"
+                  src="img/lokasi-air-terjun-sekumpul-bali.jpg/random/sig=6" width="600px"
+                />    
+            </div>
+            
+          
+                <button onclick="plusDivs(-1)">Previous</button>
+                <button onclick="plusDivs(1)">Next</button>
+
+             
+
+            </div>
+            <script>
+                var slideIndex =1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs((slideIndex += n));
+                }
+
+                
+                    
+                function showDivs(n) 
+                    var i;
+                    var imgList = document.getElementsByClassName("img-slideshow");
+                    if (n >  imgList.length) slideIndex = 1;
+                    else if(n < 1) slideIndex = imgList.length;
+
+                    for(i = 0; i < imgList.length; i++) {
+                    imgList[i].style.display = "none";
+                    
+                    
+                    imgList[slideIndex -1].style.display = "block"
+
+                }
+                
+            </script>
+           
+            <section id="form">
+                <h3 class="titleSubtitle">Contact Us</h3>
+                <h6>Marketing kami akan menghubungi anda kembali 1x 24 jam</h6>
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="Vin"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Diesel"><br><br>
+                    <label for="email">Email Address:</label><br>
+                    <input type="text" id="email" name="email" value=example@gmail.com><br><br>
+                    <p>What would you like to visit</p>
+                    <select>
+                        <option selected>Pantai Kuta</option>
+                        <option>Pura Uluwatu</option>
+                        <option>Pura Ulun Danu Beratan Bedegul</option>
+                        <option>Bali Safari Marine Park</option>
+                        <option>Pantai Tanjung Benoa</option>
+                        <option>Air Terjun Sekumpul</option>
+                    </select>
+                    <input type="submit" value="Submit">
+                  </form>
+            </section>
+        </section>
+    </main>
+    <main>
+        <section id="benefit">
+            <h3 class="titleBenefit">Benefits that you get when on vacation with us</h3>
+            <ol type="1">
+                <li>When you buy a holiday package from September to December, you will get a 35% discount</li>
+                <li>We will give snacks during the trip</li>
+                <li>We will provide a tour guide so that you better understand the place you are going to</li>
+                <li>We provide karaoke to entertain you while traveling</li>
+            </ol>
+        </section>
+    </main>
+    <main>
+        <section id="ourPackage">
+            <h2>Our Package</h2>
+        </section>
+    </main>
+    <main>
+        <section id="pantaiKuta">
+            <h3>#Pantai Kuta</h3>
+            <p>Disebut sebagai pantai matahari terbenam, objek wisata andalan bali sejak awal 1970-an </p>
+        </section>
+    </main>
+    <main>
+        <section id="puraUluwatu">
+            <h3>#Pura Uluwatu</h3>
+            <p>Merupakan tempat suci yang dibangun di puncak batu karang.</p>
+
+        </section>
+    </main>
+    <main>
+        <section id="puraUlun">
+            <h3>#Pura Ulun Danu Beratan Bedegul</h3>
+            <p> Sebuah pura dan candi air besar di Bali, Indonesia</p>
+        </section>
+    </main>
+    <main>
+        <section id="baliSafari">
+            <h3>#Bali Safari Marine Park</h3>
+            <p>Merupakan tempat wisata keluarga berwawasan lingkungan yang terletak di Desa Serongga, Kec. Gianyar, Kabupaten Gianyar, Bali.</p>
+        </section>
+    </main>
+    <main>
+        <section id="pantaiTanjung">
+            <h3>#Pantai Tanjung Benoa</h3>
+            <p>Merupakan salah satu pantai yang memiliki pasir putih dan ombaknya yang relatif tenang</p>
+
+        </section>
+    </main>
+    <main>
+        <section id="airTerjun">
+            <h3>#Air Terjun Sekumpul</h3>
+            <p>Tidak hanya satu atau dua air terjun, namun ada sekitar tujuh air terjun yang lokasinya masih tersembunyi di sekitar air terjun utama.</p>
+
+        </section>
+    </main>
+   
+</body>
+<footer id="penutupSatu">
+    <h2>Ayo!!, tunggu apalagi mari kita bersama-sama mengelilingi Kota Bali yang indah akan kekayaan dan wisatanya,anda tidak akan menyesal</h2>
+
+</footer>
+<footer id="button">
+    <button>CALL TO ACTION</button>
+</footer>
+<footer id="logoTwo">
+    <img src="img/tourist-coach-bus-icon_zkON5vIu_PMNW.jpg" width="40px">
+</footer>
+
+</html>
